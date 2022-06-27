@@ -4,7 +4,7 @@ public class ConcurrentLinkedQueueExample
 {
     private ConcurrentLinkedQueue<String> queue = null;
 
-    private volatile boolean cycle = true;
+    private volatile boolean cycle = true; //ვიყენებთ volatile-ს იმისათვის რომ cycle ცვლადი არ დაიქეშოს thread-ში
 
     ConcurrentLinkedQueueExample()
     {
