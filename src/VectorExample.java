@@ -24,7 +24,7 @@ public class VectorExample {
                     int value = i;
                     vector.add(value);
                     System.out.println("T1 added : " + value +" "+ currentThread().getName());
-                    Thread.sleep(200); //200 მილიწამის დაყოვნებით ვამატებ სტრინგებს queue-ში
+                    Thread.sleep(200);
                 }
                 cycle = false;
             } catch (Exception ex) {
@@ -48,7 +48,7 @@ public class VectorExample {
                     }
                 }
                 try {
-                    Thread.sleep(500);//500 მილიწამის დაყოვნებით ვშლი,შესაბამისად შევსება ხდება უფრო სწრაფად ვიდრე წაშლა
+                    Thread.sleep(500);
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
